@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&family=Oswald:wght@200..700&display=swap');
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+html,
+body {
+        overflow-x: hidden;
+}
+
+/* width */
+.forecast-scroll::-webkit-scrollbar {
+        height: 0px;
+}
+
+/* thumb (the draggable part) */
+.forecast-scroll::-webkit-scrollbar-thumb {
+        display: none;
+}
+
