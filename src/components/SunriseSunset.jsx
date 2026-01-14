@@ -19,7 +19,7 @@ const SunriseSunset = ({ weather }) => {
   const sunset = formatSunTime(weather.sys.sunset, weather.timezone);
 
   return (
-    <section className="bg-[url(suntime.png)] bg-center bg-cover w-full rounded-2xl overflow-hidden shadow-lg">
+    <section className="bg-[url('/suntime.png')] bg-center bg-cover w-full rounded-2xl overflow-hidden shadow-lg">
       <div className="flex justify-between items-center px-8 py-10 text-white">
         <div className="flex flex-col items-center gap-1">
           <WiSunrise size={60} />
