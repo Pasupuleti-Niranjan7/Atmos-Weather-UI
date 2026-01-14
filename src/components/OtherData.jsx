@@ -35,7 +35,7 @@ let OtherData = ({weather}) => {
               <MdSpeed size={32} />
               <span className="text-base">Pressure</span>
               <span className="text-[1rem] font-light">
-                {weather?.main?.pressure} hPa
+                {weather?.main?.pressure}hPa
               </span>
             </div>
           </div>
@@ -45,7 +45,7 @@ let OtherData = ({weather}) => {
               <FaWind size={32} />
               <span className="text-base">Wind</span>
               <span className="text-[1rem] font-light">
-                {weather?.wind?.speed} m/s
+                {weather?.wind?.speed}m/s
               </span>
             </div>
           </div>
