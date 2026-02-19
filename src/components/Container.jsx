@@ -14,7 +14,7 @@ function Container({ Theme, setTheme }) {
   let [currentYear, setCurrentYear] = useState(null);
   let [currentDay, setCurrentDay] = useState(null);
 
-    const API_key = 'ed8bb2e7a16d81c9119e2a17e57dbcfa';
+  const API_key = import.meta.env.VITE_API_KEY;
 
   let [secondAPICall, setsecondAPICall] = useState(null);
   useEffect(() => {
