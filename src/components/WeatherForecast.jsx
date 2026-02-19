@@ -58,6 +58,7 @@ let WeatherForecast = ({ location, weather, secondAPICall, timezone = 0 }) => {
                 src={`https://openweathermap.org/img/wn/${weatherIcon}@2x.png`}
                 alt={weatherDesc}
                 className="w-20 h-20 sm:w-30 sm:h-30"
+                referrerPolicy="no-referrer"
               />
               <p className="text-xs text-gray-600 capitalize mt-2 font-medium dark:text-white">
                 {weatherDesc}

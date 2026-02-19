@@ -38,7 +38,8 @@ let CurrentTemp = ({location, weather, }) => {
             <img
               src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
               alt={weather.weather[0].description}
-              className="w-35 h-35 md:w-40 md:h-40"
+              className="w-36 h-36 md:w-40 md:h-40"
+              referrerPolicy="no-referrer"
             />
 
             <span className="-mt-5 font-bold tracking-wide">
