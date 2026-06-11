@@ -1,16 +1,114 @@
-# React + Vite
+# Atmos Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive weather dashboard built with React, Vite, and Tailwind CSS. The app displays current weather, forecast details, and atmospheric data using the OpenWeatherMap API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Current weather conditions**: temperature, humidity, wind speed, pressure, and cloud coverage.
+- **City search**: search weather by city name.
+- **Forecast view**: multi-day weather forecast.
+- **Sunrise & sunset**: display sunrise and sunset times.
+- **Responsive design**: works on desktop, tablet, and mobile devices.
+- **Modern UI**: styled with Tailwind CSS and React Icons.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**
+- **Vite**
+- **Tailwind CSS**
+- **React Icons**
+- **OpenWeatherMap API**
+- **ESLint**
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Node.js v18 or higher
+- npm v9 or higher
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Pasupuleti-Niranjan7/Atmos-Weather-UI.git
+cd Weather_App
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Create a `.env` file in the project root and add your OpenWeatherMap API key:
+
+```env
+VITE_API_KEY=your_open_weather_map_api_key
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+## Scripts
+
+- `npm run dev` — start the development server
+- `npm run build` — create a production build
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run ESLint checks
+
+## Environment Variables
+
+- `VITE_API_KEY` — your OpenWeatherMap API key
+
+> Do not commit `.env` or API keys to source control.
+
+## Project Structure
+
+```
+src/
+├── assets/
+├── components/
+│   ├── CityName.jsx
+│   ├── Container.jsx
+│   ├── CurrentTemp.jsx
+│   ├── Header.jsx
+│   ├── Location.jsx
+│   ├── OtherData.jsx
+│   ├── SunriseSunset.jsx
+│   └── WeatherForecast.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+## Deployment
+
+For platforms like Vercel, Netlify, or Render:
+
+1. Build the app:
+
+```bash
+npm run build
+```
+
+2. Deploy the `dist` folder.
+3. Add the environment variable `VITE_API_KEY` in your hosting settings.
+
+## Notes
+
+- The app depends on the OpenWeatherMap API.
+- API rate limits and plan restrictions apply.
+- Keep your API key private.
+
+## Contributing
+
+Contributions are welcome. Open an issue or submit a pull request.
+
+## License
+
+This project is open source and available under the MIT License.
